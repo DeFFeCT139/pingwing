@@ -1,23 +1,23 @@
 import image from '../../../img/svg/image 9 (1).svg'
 
-function Bots() {
+function Bots({languageContent}) {
     const openForm = () => document.getElementById('form').style.display = 'block'
     return(
         <div className="about-skills-desc-item">
-            <div className="duble-name">Боты</div>
+            <div className="duble-name">{languageContent.bot.title}</div>
             <div className="about-skills-desc-item-inner">
-                <div className="about-skills-desc-item-name">Боты</div>
+                <div className="about-skills-desc-item-name">{languageContent.bot.title}</div>
                 <div className="about-skills-desc-item-desc">
                     <div className="about-skills-desc-item-desc-left">
-                        <div className="about-skills-desc-item-desc-text">Если вашему бизнесу необходим <br/>сотрудник с искусственным интеллектом, который сможет оперативно помогать пользователям, наша команда создаст для вас Telegram, VK или Discord бота.</div>
+                        <div className="about-skills-desc-item-desc-text">{languageContent.bot.desc}</div>
                         <div className="about-skills-desc-item-desc-pluse">
-                            <div className="about-skills-desc-item-desc-pluse-item">Удобные</div>
-                            <div className="about-skills-desc-item-desc-pluse-item">Оптимизированные</div>
-                            <div className="about-skills-desc-item-desc-pluse-item">Умные</div>
-                            <div className="about-skills-desc-item-desc-pluse-item">Стабильные</div>
+                            <div className="about-skills-desc-item-desc-pluse-item">{languageContent.bot.btns.one}</div>
+                            <div className="about-skills-desc-item-desc-pluse-item">{languageContent.bot.btns.two}</div>
+                            <div className="about-skills-desc-item-desc-pluse-item">{languageContent.bot.btns.three}</div>
+                            <div className="about-skills-desc-item-desc-pluse-item">{languageContent.bot.btns.for}</div>
                         </div>
                         <div className="btn-box-about">
-                            <button onClick={openForm} className="about-skills-btn">БЕСПЛАТНАЯ <br/> КОНСУЛЬТАЦИЯ</button>
+                            <button onClick={openForm} className="about-skills-btn">{languageContent.bot.btns.free}</button>
                         </div>
                     </div>
                     <div className="about-skills-desc-item-desc-right">

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../../../img/svg/Group 12.svg'
 
-function Header() {
+function Header({languageContent}) {
     window.addEventListener('scroll', function() {
         if (window.innerHeight-window.innerHeight/100*30 >= window.scrollY) {
             document.getElementById('header').classList.remove('activ')
@@ -16,16 +16,15 @@ function Header() {
             <div className="conteiner">
                 <div className="header-inner">
                     <div className="left-links">
-                        <div className="header-link">ГЛАВНАЯ</div>
-                        <Link to={'/'} className="header-link">ГЛАВНАЯ</Link>
-                        <Link to={'/contact'} className="header-link">КОНТАКТЫ</Link>
+                        <Link to={'/'} className="header-link header-link-home">{languageContent.header.home}</Link>
+                        <Link to={'/contact'} className="header-link">{languageContent.header.contact}</Link>
                     </div>
                     <div className="header-link">
                         <img src={logo} alt="" className="header-logo" />
                     </div>
                     <div className="right-links">
-                        <Link to={'/portfolio'} className="header-link">ПОРТФОЛИО</Link>
-                        <button onClick={openForm} className="header-link header-btn">КОНСУЛЬТАЦИЯ</button>
+                        <a href='/portfolio' className="header-link">{languageContent.header.prtfolio}</a>
+                        <button onClick={openForm} className="header-link header-btn">{languageContent.header.konsul}</button>
                     </div>
                 </div>
             </div>

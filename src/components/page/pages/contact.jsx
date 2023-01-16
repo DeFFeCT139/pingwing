@@ -3,12 +3,13 @@ import inst from '../../../img/svg/Vector (2).svg'
 import tg from '../../../img/svg/Subtract.svg'
 import mail from '../../../img/svg/Subtract (1).svg'
 
-function Contact() {
+function Contact({languageContent}) {
+    console.log(languageContent)
     return(
         <div className="Contact page-pading">
             <div className="Contact-page-title">
-                <div className="page-title">Контакты</div>
-                <div className="page-desc">Если Вы хотите воспользоваться нашими услугами,<br/> запишитесь на бесплатную консультацию, заполнив<br/> форму, либо напишите нам в Telegram</div>
+                <div className="page-title">{languageContent.main.contact.title}</div>
+                <div className="page-desc">{languageContent.main.contact.desc}</div>
                 <div className="contact-liks">
                     <a className="contact-link">
                         <img src={beh} alt="" className="contact-links-icon" />

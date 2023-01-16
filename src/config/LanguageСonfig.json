@@ -1,8 +1,134 @@
 {
     "ru":{
-        "header": "аыуаыуа"
+        "header": {
+            "home": "ГЛАВНАЯ",
+            "contact": "КОНТАКТЫ",
+            "prtfolio": "ПОРТФОЛИО",
+            "konsul": "КОНСУЛЬТАЦИЯ"
+        },
+        "paralax": "КРЕАТИВНО, КРУТО И СВЕЖО",
+        "main":{
+            "contact":{
+                "title":"Контакты",
+                "desc":"Если Вы хотите воспользоваться нашими услугами, запишитесь на бесплатную консультацию, заполнив форму, либо напишите нам в Telegram"
+            },
+            "about":{
+                "title":"Мы – digital агенство полного цикла",
+                "desc":"Наша команда рада помочь развитию вашего бизнеса",
+                "btn":"НАШИ ПРОЕКТЫ",
+                "slider":{
+                    "site":{
+                        "title":"Сайты",
+                        "desc":"Если у вашего бизнеса еще нет веб-сайта, то пришло время его создать. Сайт проинформирует пользователя о вашей компании, а также отобразит информацию об услугах или продуктах.",
+                        "btns":{
+                            "one":"Удобные",
+                            "two":"Оптимизированные",
+                            "three":"Стильные",
+                            "for":"Конкурентоспособные",
+                            "free":"БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ"
+                        }
+                    },
+                    "app":{
+                        "title":"Приложения",
+                        "desc":"Если вашей компании требуется индивидуальное решение. Наша команда имеет опыт разработки мобильных приложений, которые улучшат клиентоориентированность.",
+                        "btns":{
+                            "one":"Удобные",
+                            "two":"Индивидуальные",
+                            "three":"Креативные",
+                            "for":"Производительные",
+                            "free":"БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ"
+                        }
+                    },
+                    "bot":{
+                        "title":"Боты",
+                        "desc":"Если вашему бизнесу необходим сотрудник с искусственным интеллектом, который сможет оперативно помогать пользователям, наша команда создаст для вас Telegram, VK или Discord бота.",
+                        "btns":{
+                            "one":"Удобные",
+                            "two":"Оптимизированные",
+                            "three":"Умные",
+                            "for":"Стабильные",
+                            "free":"БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ"
+                        }
+                    },
+                    "smm":{
+                        "title":"SMM",
+                        "desc":"Хотите продвигать аккуанты в соц. сетях? Наши маркетологи составят стратегию продвижения и упакуют ваш профиль “под ключ”. Мы знаем, как привлечь клиентов без больших затрат на рекламу.",
+                        "btns":{
+                            "one":"Узнаваемость",
+                            "two":"Актив",
+                            "three":"Продажи",
+                            "for":"Личный бренд",
+                            "free":"БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ"
+                        }
+                    }
+                }
+            }
+        }
     },
     "en":{
-        "header": "dawdawd"
+        "header": {
+            "home": "HOME",
+            "contact": "CONTACTS",
+            "prtfolio": "PORTFOLIO",
+            "konsul": "GET IN TOUCH"
+        },
+        "paralax": "CREATIVE, COOL AND FRESHLY",
+        "main":{
+            "contact":{
+                "title":"Contacts",
+                "desc":"If you want to use our services, sign up for a free consultation by filling out the form, or get in touch with us in Telegram"
+            },
+            "about":{
+                "title":"We are full-stack digital agency",
+                "desc":"Our team is happy to help develop your business",
+                "btn":"OUR PROJECTS",
+                "slider":{
+                    "site":{
+                        "title":"Websites",
+                        "desc":"If your business doesn't have a website yet, then it's time to create one. The site will inform the user about your company, as well as display information about services or products.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Optimized",
+                            "three":"Stylish",
+                            "for":"Competitive",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "app":{
+                        "title":"Appliications",
+                        "desc":"If your company needs an individual solution. Our team has experience in developing mobile applications that will improve customer orientation.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Individual",
+                            "three":"Creative",
+                            "for":"Productive",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "bot":{
+                        "title":"Bots",
+                        "desc":"If your business needs an employee with artificial intelligence who can quickly help users, our team will create a Telegram, VK or Discord bot for you.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Optimized",
+                            "three":"Smart",
+                            "for":"Stable",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "smm":{
+                        "title":"SMM",
+                        "desc":"Do you want to promote social media accounts? Our marketers will draw up a promotion strategy and package your profile 'turnkey'. We know how to attract customers without spending a lot on advertising.",
+                        "btns":{
+                            "one":"Recognition",
+                            "two":"Activity",
+                            "three":"Sales",
+                            "for":"Personal brand",
+                            "free":"FREE CONSULTATION"
+                        }
+                    }
+                }
+            }
+        }
     }
 }
