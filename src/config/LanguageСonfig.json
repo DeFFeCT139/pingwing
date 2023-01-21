@@ -130,5 +130,203 @@
                 }
             }
         }
+    },
+    "ger":{
+        "header": {
+            "home": "HOME",
+            "contact": "CONTACTS",
+            "prtfolio": "PORTFOLIO",
+            "konsul": "GET IN TOUCH"
+        },
+        "paralax": "CREATIVE, COOL AND FRESHLY",
+        "main":{
+            "contact":{
+                "title":"Contacts",
+                "desc":"If you want to use our services, sign up for a free consultation by filling out the form, or get in touch with us in Telegram"
+            },
+            "about":{
+                "title":"We are full-stack digital agency",
+                "desc":"Our team is happy to help develop your business",
+                "btn":"OUR PROJECTS",
+                "slider":{
+                    "site":{
+                        "title":"Websites",
+                        "desc":"If your business doesn't have a website yet, then it's time to create one. The site will inform the user about your company, as well as display information about services or products.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Optimized",
+                            "three":"Stylish",
+                            "for":"Competitive",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "app":{
+                        "title":"Appliications",
+                        "desc":"If your company needs an individual solution. Our team has experience in developing mobile applications that will improve customer orientation.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Individual",
+                            "three":"Creative",
+                            "for":"Productive",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "bot":{
+                        "title":"Bots",
+                        "desc":"If your business needs an employee with artificial intelligence who can quickly help users, our team will create a Telegram, VK or Discord bot for you.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Optimized",
+                            "three":"Smart",
+                            "for":"Stable",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "smm":{
+                        "title":"SMM",
+                        "desc":"Do you want to promote social media accounts? Our marketers will draw up a promotion strategy and package your profile 'turnkey'. We know how to attract customers without spending a lot on advertising.",
+                        "btns":{
+                            "one":"Recognition",
+                            "two":"Activity",
+                            "three":"Sales",
+                            "for":"Personal brand",
+                            "free":"FREE CONSULTATION"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "ar":{
+        "header": {
+            "home": "HOME",
+            "contact": "CONTACTS",
+            "prtfolio": "PORTFOLIO",
+            "konsul": "GET IN TOUCH"
+        },
+        "paralax": "CREATIVE, COOL AND FRESHLY",
+        "main":{
+            "contact":{
+                "title":"Contacts",
+                "desc":"If you want to use our services, sign up for a free consultation by filling out the form, or get in touch with us in Telegram"
+            },
+            "about":{
+                "title":"We are full-stack digital agency",
+                "desc":"Our team is happy to help develop your business",
+                "btn":"OUR PROJECTS",
+                "slider":{
+                    "site":{
+                        "title":"Websites",
+                        "desc":"If your business doesn't have a website yet, then it's time to create one. The site will inform the user about your company, as well as display information about services or products.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Optimized",
+                            "three":"Stylish",
+                            "for":"Competitive",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "app":{
+                        "title":"Appliications",
+                        "desc":"If your company needs an individual solution. Our team has experience in developing mobile applications that will improve customer orientation.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Individual",
+                            "three":"Creative",
+                            "for":"Productive",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "bot":{
+                        "title":"Bots",
+                        "desc":"If your business needs an employee with artificial intelligence who can quickly help users, our team will create a Telegram, VK or Discord bot for you.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Optimized",
+                            "three":"Smart",
+                            "for":"Stable",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "smm":{
+                        "title":"SMM",
+                        "desc":"Do you want to promote social media accounts? Our marketers will draw up a promotion strategy and package your profile 'turnkey'. We know how to attract customers without spending a lot on advertising.",
+                        "btns":{
+                            "one":"Recognition",
+                            "two":"Activity",
+                            "three":"Sales",
+                            "for":"Personal brand",
+                            "free":"FREE CONSULTATION"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "fr":{
+        "header": {
+            "home": "HOME",
+            "contact": "CONTACTS",
+            "prtfolio": "PORTFOLIO",
+            "konsul": "GET IN TOUCH"
+        },
+        "paralax": "CREATIVE, COOL AND FRESHLY",
+        "main":{
+            "contact":{
+                "title":"Contacts",
+                "desc":"If you want to use our services, sign up for a free consultation by filling out the form, or get in touch with us in Telegram"
+            },
+            "about":{
+                "title":"We are full-stack digital agency",
+                "desc":"Our team is happy to help develop your business",
+                "btn":"OUR PROJECTS",
+                "slider":{
+                    "site":{
+                        "title":"Websites",
+                        "desc":"If your business doesn't have a website yet, then it's time to create one. The site will inform the user about your company, as well as display information about services or products.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Optimized",
+                            "three":"Stylish",
+                            "for":"Competitive",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "app":{
+                        "title":"Appliications",
+                        "desc":"If your company needs an individual solution. Our team has experience in developing mobile applications that will improve customer orientation.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Individual",
+                            "three":"Creative",
+                            "for":"Productive",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "bot":{
+                        "title":"Bots",
+                        "desc":"If your business needs an employee with artificial intelligence who can quickly help users, our team will create a Telegram, VK or Discord bot for you.",
+                        "btns":{
+                            "one":"Convenient",
+                            "two":"Optimized",
+                            "three":"Smart",
+                            "for":"Stable",
+                            "free":"FREE CONSULTATION"
+                        }
+                    },
+                    "smm":{
+                        "title":"SMM",
+                        "desc":"Do you want to promote social media accounts? Our marketers will draw up a promotion strategy and package your profile 'turnkey'. We know how to attract customers without spending a lot on advertising.",
+                        "btns":{
+                            "one":"Recognition",
+                            "two":"Activity",
+                            "three":"Sales",
+                            "for":"Personal brand",
+                            "free":"FREE CONSULTATION"
+                        }
+                    }
+                }
+            }
+        }
     }
 }

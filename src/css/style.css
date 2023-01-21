@@ -3,7 +3,40 @@ body{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    cursor: url('../cursor/material_design_cursors_light/pointer.cur'), auto;
 }
+a{
+    cursor: url('../cursor/material_design_cursors_light/link.cur'), auto !important;
+}
+select{
+    cursor: url('../cursor/material_design_cursors_light/link.cur'), auto !important;
+}
+option{
+    cursor: url('../cursor/material_design_cursors_light/link.cur'), auto !important;
+}
+.header-link{
+    cursor: url('../cursor/material_design_cursors_light/link.cur'), auto !important;
+}
+.header-link-menu{
+    cursor: url('../cursor/material_design_cursors_light/link.cur'), auto !important;
+}
+button{
+    cursor: url('../cursor/material_design_cursors_light/link.cur'), auto !important;
+}
+input{
+    cursor: url('../cursor/material_design_cursors_light/text.cur'), auto !important;
+}
+.about-skills-trap::-webkit-scrollbar {
+    width: 10px;              
+  }
+  .about-skills-trap::-webkit-scrollbar-track {
+    background: #004B91;        
+  }
+  .about-skills-trap::-webkit-scrollbar-thumb {
+    background-color: #fff;    
+    border-radius: 20px;       
+    border: 3px solid #004B91; 
+  }
 body::-webkit-scrollbar {
     width: 10px;              
   }
@@ -32,6 +65,84 @@ body::-webkit-scrollbar {
     background-repeat: repeat-x;
     bottom: 15%;
 }
+.sever{
+    height: 100vh;
+    background-image: url('../img/png/Frame 6.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.5;
+}
+.ldina{
+    transition: 3s;
+    width: 100%;
+    height: 100vh;
+}
+.ldin-n{
+    background-image: url('../img/svg/stoit (1).svg');
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    bottom: -10%;
+    z-index: 6;
+    transition: 2s;
+}
+.ldin{
+    background-image: url('../img/svg/stoit bez teni (1).svg');
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    bottom: -10%;
+    z-index: 6;
+    animation: shadow2  0.3s 1 forwards linear 4150ms ;
+    transition: 2s;
+}
+.p-s{
+    background-image: url('../img/svg/lezhit.svg');
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    bottom: calc(-10% + 110px);
+    left: -525px;
+    z-index: 6;
+}
+.activ-p-s{
+    left: 0 !important;
+    bottom: -10% ;
+    animation: shadow  150ms 1 forwards ease-in-out 2s ;
+    transition: 2s;
+}
+@keyframes shadow {
+    0% {background-image: url('../img/svg/lezhit.svg');}
+    20% {background-image: url('../img/svg/polulezha.svg');}
+    40% {background-image: url('../img/svg/polustoya.svg');}
+    60% {background-image: url('../img/svg/stoit (2).svg');}
+    80% {background-image: url('../img/svg/stoit (2).svg');}
+    100% {background-image: url('../img/svg/stoit (2).svg');}
+}
+.ldin-p{
+    background-image: url('../img/svg/stoit.svg');
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    bottom: -10%;
+    z-index: 6;
+}
+@keyframes shadow2 {
+    0% {background-image: url('../img/svg/stoit bez teni (1).svg');}
+    100% {background-image: url('../img/svg/stoit bez teni.svg');}
+}
 .front-scal{
     background-image: url('../img/svg//forward\ mountains\ 1.svg');
     height: 500px;
@@ -46,18 +157,22 @@ body::-webkit-scrollbar {
     max-width: 1142px;
     margin: auto;
 }
+.scroll{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
 .header{
     top: -150px;
     position: fixed;
     width: 100%;
-    z-index: 1;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 9;
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.25));
     background-color: #fff;
     transition: 0.2s;
 }
 .header-link-home{
-    width: 200px;
-    text-align: right;
+    margin-left: 110px;
 }
 .activ{
     top: 0px;
@@ -71,11 +186,32 @@ body::-webkit-scrollbar {
     padding: 0px 15px;
 }
 .header-link{
+    transition: 200ms;
     text-decoration: none;
     cursor: pointer;
     color: #000;
     font-weight: 400;
     font-size: 18px;
+}
+.header-link-menuuu{
+    text-align: center;
+    margin: 15px auto;
+}
+.menu-bottom-header{
+    text-align: center;
+}
+.pingvin{
+    margin: auto;
+    text-align: center;
+}
+.header-link-menu{
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 15px auto;
+    color: #000;
+    font-weight: 300;
+    font-size: 30px;
 }
 .right-links{
     display: flex;
@@ -120,44 +256,180 @@ button{
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
-    box-shadow: 0px 4px 40px rgba(255, 255, 255, 0.7);
     border-radius: 39px;
     color: #004B91;
     border: none;
     margin: 50px;
+    transition: 200ms;
+}
+.header-link:hover .line-link{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.line-link{
+    content: "";
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+}
+.header-btn:hover{
+    background-color:  #010535;
+}
+button:hover{
+    box-shadow: 0px 4px 40px rgba(255, 255, 255, 0.7);
+    transition: 200ms;
 }
 .about-page-title{
     text-align: center;
 }
 .about-skills-trap-item{
-    cursor: pointer;
+    cursor: url('../cursor/material_design_cursors_light/link.cur'), auto !important;
     height: 300px;
     min-width: 300px;
     max-width: 300px;
     margin: 60px 23px 0px 23px;
-    background: #FFFFFF;
+    background: #ffffff86 ;
     position: relative;
     box-shadow: 0px 4px 22px rgba(255, 255, 255, 0.7);
     border-radius: 15px;
+    transition: 200ms;
 }
+.about-skills-trap-item:hover .about-skills-trap-item-image{
+    transition: 200ms;
+    width: 100%;
+    margin-top: -60px;
+}
+
 .about-skills-trap{
     display: flex;
     width: 100%;
-    height: 450px;
-
+    height: 410px;
 }
+.scroll-inner{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    right: 0;
+}
+.scrolldown {
+    --color: white;
+    margin: auto auto 16px auto;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #2a547066;
+  }
+  
+  @keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+  
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+  
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+  
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+  }
+  
+  .chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+  
+  .chevrondown:nth-child(odd) {
+    animation: pulse54012 500ms ease infinite alternate;
+  }
+  
+  .chevrondown:nth-child(even) {
+    animation: pulse54012 500ms ease infinite alternate 250ms;
+  }
+  
+  @keyframes pulse54012 {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0.5;
+    }
+  }
 .about-skills-trap-item-image{
-    width: 100%;
-    margin-top: -60px;
+    width: 90%;
+    opacity: 0.5;
+    transition: 200ms;
+    margin-top: -40px;
 }
 .about-skills-trap-item-title{
     font-weight: 500;
     font-size: 34px;
-    color: black;
+    color: #fff;
     position: absolute;
     bottom: 30px;
     left: 0;
     right: 0;
+}
+.activeBlock{
+    background-color: #fff;
+}
+.activeBlock> .about-skills-trap-item-img> .about-skills-trap-item-image{
+    opacity: 1;
+    margin-top: -60px;
+    width: 100%;
+}
+.activeBlock> .about-skills-trap-item-title{
+    color: #000;
 }
 .about-skills-desc-item{
     position: relative;
@@ -232,7 +504,7 @@ button{
 .contact-liks{
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .contact-link{
@@ -264,6 +536,7 @@ button{
     top: 30%;
 }
 .luna-logo{
+    top: 0;
     width: 100%;
     height: 100vh;
     background-image: url('../img/svg/Logo.svg');
@@ -310,8 +583,8 @@ button{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.315);
-    z-index: 3;
+    background-color: rgb(0 0 0 / 58%);
+    z-index: 14;
 }
 .form-block{
     background: #FFFFFF;
@@ -319,7 +592,7 @@ button{
     width: 322px;
     height: 410px;
     position: fixed;
-    z-index: 4;
+    z-index: 15;
     left: 0;
     right: 0;
     text-align: center;
@@ -458,6 +731,7 @@ button{
 .ErrorPage404{
     position: absolute;
     top: 0;
+    background-repeat: no-repeat;
     left: 0;
     right: 0;
     bottom: 0;
@@ -472,6 +746,7 @@ button{
     position: absolute;
     top: 0;
     left: 0;
+    background-repeat: no-repeat;
     right: 0;
     bottom: 0;
     height: 100vh;
@@ -544,10 +819,11 @@ button{
     max-width: 800px;
 }
 .Select{
-    position: absolute;
+    position: fixed;
     top: 15px;
     left: 15px;
-    z-index: 10;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    z-index: 12;
 }
 select{
     font-family: 'Montserrat', sans-serif;
@@ -558,4 +834,400 @@ select{
     appearance: #fff;
     border: none;
     border-radius: 4px;
+}
+.about-skills-desc-item-desc-img-two{
+    display: none;
+}
+.about-skills-desc-item-desc-img-two{
+    width: 100%;
+}
+.menu-btn{
+    position: fixed;
+    right: 15px;
+    display: none;
+    top: 30px;
+    z-index: 8;
+    cursor: url('../cursor/material_design_cursors_light/link.cur'), auto !important;
+}
+.menu-btn-header{
+    position: absolute;
+    right: 15px;
+    display: none;
+    top: 30px;
+    cursor: url('../cursor/material_design_cursors_light/link.cur'), auto !important;
+}
+.menu-top-header-inner{
+    display: flex;
+    justify-content: center;
+    height: 92px;
+    align-items: center;
+}
+.menu-bottom-header{
+    position: absolute;
+    width: 320px;
+    left: 0;
+    right: 0;
+    top: 92px;
+    height: calc(100vh - 92px);
+    margin: auto;
+}
+.menu{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    bottom: 0;
+    right: -100%;
+    display: none;
+    transition: 1s;
+    height: 100vh;
+}
+.menu-top-header{
+    width: 100%;
+    position: relative;
+}
+.activ-menu{
+    right: 0;
+    transition: 1s;
+}
+/*Адоптив*/
+
+@media (max-width: 1140px ){
+    .about-skills-desc-item-desc-right{
+        display: none;
+    }
+    .about-skills-desc-item-desc-img-two{
+        display: block;
+    }
+    .about-skills-desc-item-desc-left{
+        width: 100%;
+        text-align: center;
+    }
+    .about-skills-desc-item-desc-text{
+        margin: auto;
+    }
+    .about-skills-desc-item-desc-pluse{
+        margin: auto;
+    }
+    .btn-box-about{
+        margin: auto;
+    }
+    .duble-name{
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .about-skills-desc-item-name{
+        text-align: center;
+    }
+}
+@media (min-width: 1040px ){
+    .header-inner{
+        height: 55px;
+        transition: 500ms;
+    }
+    .header-logo-libk{
+        margin-top: 35px;
+        transition: 500ms;
+    }
+    .header:hover .header-inner{
+        height: 135px;
+        transition: 500ms;
+    }
+    .header:hover .header-logo-libk{
+        margin: 0;
+        transition: 500ms;
+    }
+}
+@media (max-width: 1040px ){
+    .menu-btn-header{
+        display: block;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .header-link{
+        display: none;
+    }
+    .header-logo-libk{
+        width: 65px;
+    }
+    .scroll-inner{
+        bottom: 10px;
+    }
+    .header-inner{
+        height: 92px;
+    }
+    .Select{
+        top: 30px;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+@media (max-width: 640px){
+    .about-skills-desc-item-desc-text{
+        font-weight: 300;
+        font-size: 15px;
+    }
+    .about-skills-desc-item-desc-pluse-item{
+        font-weight: 300;
+        font-size: 10px;
+        width:205px;
+    }
+    .duble-name{
+        left: 0;
+        right: 0;
+        font-weight: 900;
+        font-size: 30px;
+        text-align: center;
+    }
+    .about-skills-desc-item-name{
+        text-align: center;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .about-skills-desc-item-inner{
+        padding: 0;
+    }
+}
+@media (max-width: 532px){
+    .about-skills-desc-item-desc-pluse-item{
+        font-weight: 300;
+        font-size: 10px;
+        width:155px;
+    }
+    .about-skills-btn{
+        font-weight: 500;
+        font-size: 20px;
+        width: 100%;
+        padding: 9px 20px;
+    }
+    .page-title{
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .page-desc{
+        font-weight: 300;
+        font-size: 15px;
+    }
+    .page-pading{
+        padding: 40% 15px 50px 15px;
+    }
+    .pade-btn{
+        font-size: 20px;
+        width: 320px;
+        padding: 24px 0px;
+        text-align: center;
+        margin: 50px 0px;
+    }
+    .about-skills-trap-item{
+        max-width: 230px;
+        min-width: 230px;
+        height: 230px;
+    }
+    .about-skills-trap-item-title{
+        font-weight: 500;
+        font-size: 26.2326px;
+    }
+    .contact-links-icon{
+        width: 88px;
+    }
+}
+@media (max-width:380px){
+    .about-skills-desc-item-desc-pluse-item {
+    width: 125px;
+    }
+}
+@media (max-width: 1155px){
+    .pingwing-text{
+        font-size: 150px;
+    }
+    .pingwing-slogan{
+        font-size: 50px;
+        top: 27%;
+    }
+    .front-scal{
+        background-size: 200%;
+        height: 430px;
+    }
+    .back-scal{
+        background-size: 200%;
+        height: 430px;
+    }
+    .luna-logo{
+        background-size: 30%;
+        top: 0;
+    }
+    .obloko-front{
+        background-position: calc(50% + 300px) 12%;
+    }
+    .obloko-midle {
+        background-position: calc(50% - 390px) 9%;
+    }
+    .obloko-back{
+        background-position: calc(50% - 230px) 23%;
+    }
+}
+@media (max-width: 1040px){
+    .front-scal{
+        background-size: 200%;
+        height: 400px;
+    }
+    .back-scal{
+        background-size: 200%;
+        height: 400px;
+    }
+}
+@media (max-width: 990px){
+    .front-scal{
+        background-size: 250%;
+        height: 350px;
+    }
+    .back-scal{
+        background-size: 250%;
+        height: 350px;
+    }
+}
+@media (max-width: 656px){
+    .front-scal{
+        background-size: 280%;
+        height: 350px;
+    }
+    .back-scal{
+        background-size: 280%;
+        height: 350px;
+    }
+}
+@media (max-width: 656px){
+    .front-scal{
+        height: 350px;
+        background-size: 300%;
+        background-position: -100px ;
+    }
+    .back-scal{
+        height: 350px;
+        background-size: 300%;
+        background-position: -100px ;
+    }
+}
+@media (max-width: 456px){
+    .front-scal{
+        height: 350px;
+        background-size: 370%;
+    }
+    .back-scal{
+        height: 350px;
+        background-size: 370%;
+    }
+}
+@media (max-width:740px){
+    .l-p{
+        background-position: -250px;
+        bottom: -20%;
+    }
+    .l-p2{
+        background-position: -775px;
+    }
+    .content {
+        top: 95%;
+    }
+    .activ-p-s{
+        background-position: -250px;
+        bottom: -20%;
+    }
+    .front-scal{
+        bottom: 4%;
+    }
+    .back-scal{
+        bottom: 4%;
+    }
+}
+@media (max-width:444px){
+    .l-p{
+        background-position: -350px;
+    }
+    .l-p2{
+        background-position: -875px;
+    }
+    .activ-p-s{
+        background-position: -350px;
+    }
+}
+@media (max-width: 870px){
+    .pingwing-text{
+        font-size: 100px;
+    }
+    .pingwing-slogan{
+        font-size: 35px;
+    }
+    .luna-logo{
+        background-size: 40%;
+        top: 0;
+    }
+    .obloko-front{
+        background-position: calc(50% + 290px) 12%;
+    }
+    .obloko-midle {
+        background-position: calc(50% - 320px) 9%;
+    }
+    .obloko-back{
+        background-position: calc(50% - 190px) 23%;
+    }
+}
+@media (min-width: 1384px){
+    .about-skills-trap{
+        margin-left: -135px;
+    }
+}
+@media (max-width: 1383px){
+    .about-skills-trap{
+        overflow-y: auto;
+    }
+}
+@media (max-width: 597px){
+    .pingwing-text{
+        font-size: 60px;
+        top: 35%;
+    }
+    .pingwing-slogan{
+        font-size: 20px;
+        top: 37%;
+    }
+    .luna-logo{
+        background-size: 55%;
+        top: 5vh;
+    }
+    .obloko-front{
+        background-position: calc(50% + 240px) 12%;
+    }
+    .obloko-midle {
+        background-position: calc(50% - 230px) 9%;
+    }
+    .obloko-back{
+        background-position: calc(50% - 130px) 23%;
+    }
+}
+@media (min-width: 472px) and (max-width: 597px){
+
+    .luna-logo{
+        top: 2vh;
+    }
+}
+@media (max-width: 472px){
+    .obloko-front{
+        background-position: calc(50% + 150px) 12%;
+        background-size: 35%;
+    }
+    .obloko-midle {
+        background-position: calc(50% - 170px) 9%;
+        background-size: 30%;
+    }
+    .obloko-back{
+        background-position: calc(50% - 100px) 23%;
+        background-size: 25%;
+    }
 }

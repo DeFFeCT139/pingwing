@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import logo from '../../../img/svg/Group 12.svg'
+import menu from '../../../img/svg/Vector (3).svg'
 
 function Header({languageContent}) {
+    
     window.addEventListener('scroll', function() {
         if (window.innerHeight-window.innerHeight/100*30 >= window.scrollY) {
             document.getElementById('header').classList.remove('activ')
@@ -10,23 +12,38 @@ function Header({languageContent}) {
         }
     });
 
+    const openMenu = () => document.getElementById('menu').classList.add('activ-menu')
     const openForm = () => document.getElementById('form').style.display = 'block'
     return(
         <div id='header' className="header">
             <div className="conteiner">
                 <div className="header-inner">
                     <div className="left-links">
-                        <Link to={'/'} className="header-link header-link-home">{languageContent.header.home}</Link>
-                        <Link to={'/contact'} className="header-link">{languageContent.header.contact}</Link>
+                        <Link to={'/'} className="header-link header-link-home">
+                            {languageContent.header.home}
+                            <div className="line-link"></div>
+                        </Link>
+                        <Link to={'/contact'} className="header-link">
+                            {languageContent.header.contact}
+                            <div className="line-link"></div>
+                        </Link>
                     </div>
-                    <div className="header-link">
-                        <img src={logo} alt="" className="header-logo" />
+                    <div className="">
+                        <img src={logo} alt="" className="header-logo-libk" />
                     </div>
                     <div className="right-links">
-                        <a href='/portfolio' className="header-link">{languageContent.header.prtfolio}</a>
-                        <button onClick={openForm} className="header-link header-btn">{languageContent.header.konsul}</button>
+                        <a href='/portfolio' className="header-link">
+                            {languageContent.header.prtfolio}
+                            <div className="line-link"></div>
+                        </a>
+                        <button onClick={openForm} className="header-link header-btn">
+                            {languageContent.header.konsul}
+                        </button>
                     </div>
                 </div>
+            </div>
+            <div className="menu-btn-header">
+                <img src={menu} onClick={openMenu} alt="" className="menu-btn-header-img" />
             </div>
         </div>
     )
