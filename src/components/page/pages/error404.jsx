@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 
 function ErrorPage() {
-    useEffect(()=>{
-        document.getElementById('content').classList.add('error-page')
-    })
+  useEffect(()=>{
+    document.getElementById('root').style.height = 'auto'
+    document.getElementById('root').style.overflow = 'initial'
+  })
     return(
         <div className="ErrorPage404">
+            <div id='about-text-none' className="about-text-none none">About</div>
           <div className="conteiner">
             <div className="ErrorPage404-content">
                 <div className="ErrorPage404-content-title">Страница не найдена.</div>

@@ -2,10 +2,12 @@ import { useEffect } from "react";
 
 function Portfolio() {
     useEffect(()=>{
-        document.getElementById('content').classList.add('error-page')
-    })
+        document.getElementById('root').style.height = 'auto'
+        document.getElementById('root').style.overflow = 'initial'
+      })
     return(
         <div className="tehwork">
+            <div id='about-text-none' className="about-text-none none">About</div>
             <div className="tehwork-content-inner">
                 <div className="tehwork-content-title">Технические работы</div>
                 <div className="tehwork-content-bottom">

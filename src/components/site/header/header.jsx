@@ -1,36 +1,43 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import logo from '../../../img/svg/Group 12.svg'
 import menu from '../../../img/svg/Vector (3).svg'
+import bur from '../../../img/svg/burger.svg'
 
 function Header({languageContent}) {
     
-    window.addEventListener('scroll', function() {
-        if (window.innerHeight-window.innerHeight/100*30 >= window.scrollY) {
-            document.getElementById('header').classList.remove('activ')
-        }else{
+    useEffect(()=>{
+        if (document.getElementById("about-text-none").innerText === 'About') {
+            window.addEventListener('scroll', function() {
+                if (window.innerHeight-window.innerHeight/100*20 >= window.scrollY) {
+                    document.getElementById('header').classList.remove('activ')
+                }else{
+                    document.getElementById('header').classList.add('activ')
+                }
+            });
+        } else {
             document.getElementById('header').classList.add('activ')
         }
-    });
+    })
+
 
     const openMenu = () => document.getElementById('menu').classList.add('activ-menu')
     const openForm = () => document.getElementById('form').style.display = 'block'
     return(
         <div id='header' className="header">
             <div className="conteiner">
-                <div className="header-inner">
+                <div id='header-inner' className="header-inner">
+                    <img src={bur} alt="" className='header-burger-svg'/>
                     <div className="left-links">
-                        <Link to={'/'} className="header-link header-link-home">
+                        <a href='/' className="header-link header-link-home">
                             {languageContent.header.home}
                             <div className="line-link"></div>
-                        </Link>
-                        <Link to={'/contact'} className="header-link">
+                        </a>
+                        <a href='/contact' className="header-link">
                             {languageContent.header.contact}
                             <div className="line-link"></div>
-                        </Link>
+                        </a>
                     </div>
-                    <div className="">
                         <img src={logo} alt="" className="header-logo-libk" />
-                    </div>
                     <div className="right-links">
                         <a href='/portfolio' className="header-link">
                             {languageContent.header.prtfolio}

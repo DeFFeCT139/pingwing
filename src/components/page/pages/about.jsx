@@ -3,24 +3,20 @@ import phone from '../../../img/svg/3 1 (1).svg'
 import bot from '../../../img/svg/image 4 (1).svg'
 import phone2 from '../../../img/svg/—Pngtree—social media marketing viral mms_5332751 1.svg'
 import ListInfo from '../../site/sliderDesc/listInfo'
-import { motion } from "framer-motion";
+import cube from '../../../img/svg/Rectangle 5.svg'
+import cube2 from '../../../img/svg/Rectangle 21.svg'
+import fish from '../../../img/svg/Group 16.svg'
+import fish2 from '../../../img/svg/Vector.svg'
 import { useEffect, useState } from 'react'
+import 'swiper/css';
+import { Mousewheel} from 'swiper';
+import 'swiper/css/mousewheel';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 function About({languageContent}) {
     let about = languageContent.main.about
     let components = 'site'
-    
-    const animeteContent= {
-        hidden: {
-          opacity: 0,
-        },
-        visible:{
-          opacity: 1,
-          transition:{ 
-            delay: 0,
-          },
-        },
-      }
+
 
     const [component, setComponent] = useState(components)
     const site = () =>{
@@ -55,42 +51,63 @@ function About({languageContent}) {
         }
         document.getElementById('smms').classList.add('activeBlock')
     };
-
+    let razmer = 3
+    const [raz, setRaz] = useState(razmer)
+    useEffect(()=>{
+        if (document.getElementById('swoper').offsetWidth/ 250 <= 3) {
+            setRaz(razmer = document.getElementById('swoper').offsetWidth/ 250)
+        }
+    })
     return(
-        <motion.div initial='hidden' whileInView='visible' viewport={{amount: 0.5, once: true}}  className="about page-pading">
-            <motion.div variants={animeteContent} className="about-page-title">
-                <div className="page-title">{about.title}</div>
-                <div className="page-desc">{about.desc}</div>
-                <button className='pade-btn'>{about.btn}</button>
-                <div className="about-skills">
-                    <div className="about-skills-trap">
-                        <div id='site' onClick={site} className="about-skills-trap-item activeBlock">
-                            <div className="about-skills-trap-item-img">
-                                <img src={pc} alt="" className="about-skills-trap-item-image" />                            </div>
-                            <div className="about-skills-trap-item-title">{about.slider.site.title}</div>
-                        </div>
-                        <div id='apps' onClick={apps} className="about-skills-trap-item">
-                            <div className="about-skills-trap-item-img">
-                                <img src={phone} alt="" className="about-skills-trap-item-image" />                            </div>
-                                <div className="about-skills-trap-item-title">{about.slider.app.title}</div>
-                        </div>
-                        <div id='bots' onClick={bots} className="about-skills-trap-item">
-                            <div className="about-skills-trap-item-img">
-                                <img src={bot} alt="" className="about-skills-trap-item-image" />                            </div>
-                            <div className="about-skills-trap-item-title">{about.slider.bot.title}</div>
-                        </div>
-                        <div id='smms' onClick={smms} className="about-skills-trap-item">
-                            <div className="about-skills-trap-item-img">
-                                <img src={phone2} alt="" className="about-skills-trap-item-image" />                            </div>
-                            <div className="about-skills-trap-item-title">{about.slider.smm.title}</div>
+        <div className="conteiner">
+            <div id='about-text-none' className="about-text-none none">About</div>
+            <div className="about page-pading">
+                <div className="about-page-title">
+                    <div className="page-title">{about.title}</div>
+                    <div className="page-desc">{about.desc}</div>
+                    <button className='pade-btn'>{about.btn}</button>
+                    <div id='swoper' className="about-skills">
+                        <Swiper modules={[Mousewheel]} mousewheel spaceBetween={50} slidesPerView={raz}>
+                            <SwiperSlide>
+                                <div id='site' onClick={site} className="about-skills-trap-item activeBlock">
+                                    <div className="about-skills-trap-item-img">
+                                        <img src={pc} alt="" className="about-skills-trap-item-image" />                            </div>
+                                    <div className="about-skills-trap-item-title">{about.slider.site.title}</div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div id='apps' onClick={apps} className="about-skills-trap-item">
+                                    <div className="about-skills-trap-item-img">
+                                        <img src={phone} alt="" className="about-skills-trap-item-image" />                            </div>
+                                        <div className="about-skills-trap-item-title">{about.slider.app.title}</div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div id='bots' onClick={bots} className="about-skills-trap-item">
+                                    <div className="about-skills-trap-item-img">
+                                        <img src={bot} alt="" className="about-skills-trap-item-image" />                            </div>
+                                    <div className="about-skills-trap-item-title">{about.slider.bot.title}</div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div id='smms' onClick={smms} className="about-skills-trap-item">
+                                    <div className="about-skills-trap-item-img">
+                                        <img src={phone2} alt="" className="about-skills-trap-item-image" />                            </div>
+                                    <div className="about-skills-trap-item-title">{about.slider.smm.title}</div>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
+                        <div className="about-skills-desc">
+                        <ListInfo languageContent={about} components={component}/>
                         </div>
                     </div>
-                    <div className="about-skills-desc">
-                       <ListInfo languageContent={about} components={component}/>
-                    </div>
-                </div>
-            </motion.div >
-        </motion.div >
+                </div >
+            </div >
+            <img src={cube} alt="" className="about-cube-one" />
+            <img src={cube2} alt="" className="about-cube-two" />
+            <img src={fish} alt="" className="about-fihe-one" />
+            <img src={fish2} alt="" className="about-fihe-two" />
+        </div>
     )
 }
 

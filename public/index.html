@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/" />
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,7 +14,10 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>PINGWING</title>
   </head>
-  <body>
+  <body id="pngwing">
     <div id="root"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+      <script type="text/babel">
+      SmoothScroll({animationTime: 800, stepSize: 75, accelerationDelta: 30, accelerationMax: 2, keyboardSupport: true, arrowScroll: 50, pulseAlgorithm: true, pulseScale: 4, pulseNormalize: 1, touchpadSupport   : true,})</script>
   </body>
 </html>
