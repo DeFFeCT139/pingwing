@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pingwing/static/css/main.96d85f1c.css",
-    "main.js": "/pingwing/static/js/main.f9420e97.js",
+    "main.css": "/pingwing/static/css/main.64f96d4a.css",
+    "main.js": "/pingwing/static/js/main.429c8cac.js",
     "static/js/787.e18f5312.chunk.js": "/pingwing/static/js/787.e18f5312.chunk.js",
     "static/media/image 9 (1).svg": "/pingwing/static/media/image 9 (1).60ba958bfb9c273f5b5599a12f385c81.svg",
     "static/media/3 1 (1).svg": "/pingwing/static/media/3 1 (1).ce27e9a6d7da59d5b98d2c9d9eeb2e9c.svg",
@@ -46,12 +46,12 @@
     "static/media/Vector (3).svg": "/pingwing/static/media/Vector (3).b068a99dfca9722a2722a1d41793f15e.svg",
     "static/media/Vector (4).svg": "/pingwing/static/media/Vector (4).55088bec9dba48df8c5b572a9411f8a6.svg",
     "static/media/Vector (5).svg": "/pingwing/static/media/Vector (5).c03e43330eae7aa15d76b3032eee4ef9.svg",
-    "main.96d85f1c.css.map": "/pingwing/static/css/main.96d85f1c.css.map",
-    "main.f9420e97.js.map": "/pingwing/static/js/main.f9420e97.js.map",
+    "main.64f96d4a.css.map": "/pingwing/static/css/main.64f96d4a.css.map",
+    "main.429c8cac.js.map": "/pingwing/static/js/main.429c8cac.js.map",
     "787.e18f5312.chunk.js.map": "/pingwing/static/js/787.e18f5312.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96d85f1c.css",
-    "static/js/main.f9420e97.js"
+    "static/css/main.64f96d4a.css",
+    "static/js/main.429c8cac.js"
   ]
 }
